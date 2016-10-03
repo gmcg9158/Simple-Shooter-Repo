@@ -3,7 +3,7 @@ package com.example.travistaylor.shootertargets;
 /**
  * Created by G. McGee on 10/2/2016
  */
-public class Enemy {
+public class Enemy extends Player{  //inherits methods from the parent class Player
     int health;
     int speed;
     int damage;
