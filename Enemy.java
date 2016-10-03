@@ -1,7 +1,7 @@
 package com.example.travistaylor.shootertargets;
 
 /**
- * Created by Travis Taylor on 9/29/2016.
+ * Created by G. McGee on 10/2/2016
  */
 public class Enemy {
     int health;
@@ -9,26 +9,26 @@ public class Enemy {
     int damage;
     float[]color;
 
-    public Enemy(){
+  public Enemy(){
         health=1;
         speed=0;
         damage=0;
     }
 
     public void changeHealth(int n){
-        health+=n;
+        super.changeHealth(n);
     }
 
     public void changeDamage(int n){
-        damage+=n;
+        super.changeHealth(n);
     }
 
     public void changeSpeed(int n){
-        speed+=n;
+    	super.changeSpeed(n);
     }
 
     public int getHealth(){
-        return health;
+       return health;
     }
 
     public int getDamage(){
@@ -38,4 +38,6 @@ public class Enemy {
     public int getSpeed(){
         return speed;
     }
+}
+
 }
